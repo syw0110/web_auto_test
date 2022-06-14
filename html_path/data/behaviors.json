@@ -1,0 +1,26 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "购买模块",
+    "children" : [ {
+      "name" : "购买子模块：购买流程",
+      "children" : [ {
+        "name" : "正常购买流程",
+        "uid" : "618d84d12012a575",
+        "parentUid" : "a32eb1794e4fdd2e259948f49131c017",
+        "status" : "passed",
+        "time" : {
+          "start" : 1655183675057,
+          "stop" : 1655183773988,
+          "duration" : 98931
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a32eb1794e4fdd2e259948f49131c017"
+    } ],
+    "uid" : "8831769eb86817e2af90cf089ea000ae"
+  } ]
+}

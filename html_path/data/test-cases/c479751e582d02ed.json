@@ -1,0 +1,140 @@
+{
+  "uid" : "c479751e582d02ed",
+  "name" : "购买流程完成",
+  "fullName" : "cases.test_buy_goods.TestFlow#test_buy_flow",
+  "historyId" : "83b610b7c6de45e159e36418aa02765d",
+  "time" : {
+    "start" : 1655178023161,
+    "stop" : 1655178141039,
+    "duration" : 117878
+  },
+  "description" : "购买流程完成",
+  "descriptionHtml" : "<p>购买流程完成</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 0 not greater than or equal to 20220614110047",
+  "statusTrace" : "self = <cases.test_buy_goods.TestFlow testMethod=test_buy_flow>\n\n    @allure.title(\"购买流程完成\")\n    @allure.description(\"购买流程完成\")\n    def test_buy_flow(self):\n        with allure.step(\"验证空密码登录\"):\n            allure.attach(\"1.点击登录按钮\")\n            allure.attach(\"2.进行购买流程操作\")\n            allure.attach(\"3.流程结束，订单增加\")\n    \n        self.bf.login(self.driver, self.username, self.password, self.verify_code)\n        sleep(5)\n        self.bf.buy_goods(self.driver)\n    \n        self.order_no, shop_name, shop_price, shop_num, pay_status = self.bf.get_order_msg(self.driver)\n    \n        # 断言订单编号\n>       self.assertGreaterEqual(0, get_cz(self.order_no))\nE       AssertionError: 0 not greater than or equal to 20220614110047\n\ncases\\test_buy_goods.py:52: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_unittest_setUpClass_fixture_TestFlow",
+    "time" : {
+      "start" : 1655178023158,
+      "stop" : 1655178023158,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "购买流程完成",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 0 not greater than or equal to 20220614110047",
+    "statusTrace" : "self = <cases.test_buy_goods.TestFlow testMethod=test_buy_flow>\n\n    @allure.title(\"购买流程完成\")\n    @allure.description(\"购买流程完成\")\n    def test_buy_flow(self):\n        with allure.step(\"验证空密码登录\"):\n            allure.attach(\"1.点击登录按钮\")\n            allure.attach(\"2.进行购买流程操作\")\n            allure.attach(\"3.流程结束，订单增加\")\n    \n        self.bf.login(self.driver, self.username, self.password, self.verify_code)\n        sleep(5)\n        self.bf.buy_goods(self.driver)\n    \n        self.order_no, shop_name, shop_price, shop_num, pay_status = self.bf.get_order_msg(self.driver)\n    \n        # 断言订单编号\n>       self.assertGreaterEqual(0, get_cz(self.order_no))\nE       AssertionError: 0 not greater than or equal to 20220614110047\n\ncases\\test_buy_goods.py:52: AssertionError",
+    "steps" : [ {
+      "name" : "验证空密码登录",
+      "time" : {
+        "start" : 1655178026273,
+        "stop" : 1655178026280,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8be5009ab10155f3",
+        "name" : "6716dac2-b9e4-4b2b-8d25-2b104fe07eeb-attachment.attach",
+        "source" : "8be5009ab10155f3.attach",
+        "type" : "text/plain",
+        "size" : 20
+      }, {
+        "uid" : "5831ae43365da855",
+        "name" : "d4547ffd-25f0-4603-aabf-7313d6f95948-attachment.attach",
+        "source" : "5831ae43365da855.attach",
+        "type" : "text/plain",
+        "size" : 26
+      }, {
+        "uid" : "e042297a2ec8c815",
+        "name" : "e51440f5-7256-4975-8aea-c16636b5c8fd-attachment.attach",
+        "source" : "e042297a2ec8c815.attach",
+        "type" : "text/plain",
+        "size" : 29
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "_unittest_setUpClass_fixture_TestFlow::0",
+    "time" : {
+      "start" : 1655178141238,
+      "stop" : 1655178141238,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "购买子模块：购买流程"
+  }, {
+    "name" : "feature",
+    "value" : "购买模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_buy_goods"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFlow"
+  }, {
+    "name" : "host",
+    "value" : "yan"
+  }, {
+    "name" : "thread",
+    "value" : "1296-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_buy_goods"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c479751e582d02ed.json",
+  "parameterValues" : [ ]
+}

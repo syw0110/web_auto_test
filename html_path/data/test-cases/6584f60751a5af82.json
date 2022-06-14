@@ -1,0 +1,140 @@
+{
+  "uid" : "6584f60751a5af82",
+  "name" : "正常购买流程",
+  "fullName" : "cases.test_buy_goods.TestFlow#test_buy_flow",
+  "historyId" : "83b610b7c6de45e159e36418aa02765d",
+  "time" : {
+    "start" : 1655182659787,
+    "stop" : 1655182768848,
+    "duration" : 109061
+  },
+  "description" : "用户选择商品进行购买，断言购买商品数据正确",
+  "descriptionHtml" : "<p>用户选择商品进行购买，断言购买商品数据正确</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: '￥2799.00' != '￥2743.02'\n- ￥2799.00\n+ ￥2743.02",
+  "statusTrace" : "self = <cases.test_buy_goods.TestFlow testMethod=test_buy_flow>\n\n    @allure.title(\"正常购买流程\")\n    @allure.description(\"用户选择商品进行购买，断言购买商品数据正确\")\n    def test_buy_flow(self):\n        with allure.step(\"选择商品加入购物车流程\"):\n            allure.attach(f\"1.输入正确的用户名:{self.username}和密码:{self.password},进行登录\")\n            allure.attach(\"2.选择商品，加入购物车，支付下单\")\n            allure.attach(\"2.选择商品，加入购物车，支付下单\")\n        self.bf.login(self.driver, self.username, self.password, self.verify_code)\n        sleep(5)\n        self.bf.buy_goods(self.driver)\n    \n        self.order_no, self.shop_name, self.shop_price, self.shop_num, self.pay_status = self.bf.get_order_msg(self.driver)\n    \n        # 断言订单编号\n        self.assertGreaterEqual(0, get_cz(self.order_no))\n    \n        # 断言商品名称，商品单价，商品数量\n        goods_name = cache.get(\"shop_name\")\n        logger.info(f\"从缓存中获取到的商品名称：{goods_name}\")\n        goods_price = cache.get(\"shop_price\")\n        logger.info(f\"从缓存中获取到的商品单价：{goods_price}\")\n    \n        self.assertEqual(goods_name, self.shop_name[0:13])\n>       self.assertEqual(goods_price, self.shop_price)\nE       AssertionError: '￥2799.00' != '￥2743.02'\nE       - ￥2799.00\nE       + ￥2743.02\n\ncases\\test_buy_goods.py:58: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_unittest_setUpClass_fixture_TestFlow",
+    "time" : {
+      "start" : 1655182659784,
+      "stop" : 1655182659784,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "用户选择商品进行购买，断言购买商品数据正确",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: '￥2799.00' != '￥2743.02'\n- ￥2799.00\n+ ￥2743.02",
+    "statusTrace" : "self = <cases.test_buy_goods.TestFlow testMethod=test_buy_flow>\n\n    @allure.title(\"正常购买流程\")\n    @allure.description(\"用户选择商品进行购买，断言购买商品数据正确\")\n    def test_buy_flow(self):\n        with allure.step(\"选择商品加入购物车流程\"):\n            allure.attach(f\"1.输入正确的用户名:{self.username}和密码:{self.password},进行登录\")\n            allure.attach(\"2.选择商品，加入购物车，支付下单\")\n            allure.attach(\"2.选择商品，加入购物车，支付下单\")\n        self.bf.login(self.driver, self.username, self.password, self.verify_code)\n        sleep(5)\n        self.bf.buy_goods(self.driver)\n    \n        self.order_no, self.shop_name, self.shop_price, self.shop_num, self.pay_status = self.bf.get_order_msg(self.driver)\n    \n        # 断言订单编号\n        self.assertGreaterEqual(0, get_cz(self.order_no))\n    \n        # 断言商品名称，商品单价，商品数量\n        goods_name = cache.get(\"shop_name\")\n        logger.info(f\"从缓存中获取到的商品名称：{goods_name}\")\n        goods_price = cache.get(\"shop_price\")\n        logger.info(f\"从缓存中获取到的商品单价：{goods_price}\")\n    \n        self.assertEqual(goods_name, self.shop_name[0:13])\n>       self.assertEqual(goods_price, self.shop_price)\nE       AssertionError: '￥2799.00' != '￥2743.02'\nE       - ￥2799.00\nE       + ￥2743.02\n\ncases\\test_buy_goods.py:58: AssertionError",
+    "steps" : [ {
+      "name" : "选择商品加入购物车流程",
+      "time" : {
+        "start" : 1655182662797,
+        "stop" : 1655182662799,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "71c58360d5b17747",
+        "name" : "f789f60e-a815-41f2-b6bd-7b75757711e6-attachment.attach",
+        "source" : "71c58360d5b17747.attach",
+        "type" : "text/plain",
+        "size" : 67
+      }, {
+        "uid" : "9db0a72eae611ae",
+        "name" : "be8c9e48-4785-4168-a033-f6419ecfaadf-attachment.attach",
+        "source" : "9db0a72eae611ae.attach",
+        "type" : "text/plain",
+        "size" : 47
+      }, {
+        "uid" : "ffd6e91a3523a80e",
+        "name" : "a4eecb3a-99ca-4b5e-ba26-b18ce9443cd5-attachment.attach",
+        "source" : "ffd6e91a3523a80e.attach",
+        "type" : "text/plain",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "_unittest_setUpClass_fixture_TestFlow::0",
+    "time" : {
+      "start" : 1655182768985,
+      "stop" : 1655182768985,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "购买模块"
+  }, {
+    "name" : "story",
+    "value" : "购买子模块：购买流程"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_buy_goods"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFlow"
+  }, {
+    "name" : "host",
+    "value" : "yan"
+  }, {
+    "name" : "thread",
+    "value" : "17104-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_buy_goods"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6584f60751a5af82.json",
+  "parameterValues" : [ ]
+}

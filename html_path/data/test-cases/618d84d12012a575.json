@@ -1,0 +1,191 @@
+{
+  "uid" : "618d84d12012a575",
+  "name" : "正常购买流程",
+  "fullName" : "cases.test_buy_goods.TestFlow#test_buy_flow",
+  "historyId" : "83b610b7c6de45e159e36418aa02765d",
+  "time" : {
+    "start" : 1655183675057,
+    "stop" : 1655183773988,
+    "duration" : 98931
+  },
+  "description" : "用户选择商品进行购买，断言购买商品数据正确",
+  "descriptionHtml" : "<p>用户选择商品进行购买，断言购买商品数据正确</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_unittest_setUpClass_fixture_TestFlow",
+    "time" : {
+      "start" : 1655183675055,
+      "stop" : 1655183675055,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "用户选择商品进行购买，断言购买商品数据正确",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "选择商品加入购物车流程",
+      "time" : {
+        "start" : 1655183678051,
+        "stop" : 1655183678057,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "87037be912845194",
+        "name" : "ab31b545-60b9-4ce8-b1fe-99f0bc6281a1-attachment.attach",
+        "source" : "87037be912845194.attach",
+        "type" : "text/plain",
+        "size" : 67
+      }, {
+        "uid" : "a143b0b3502e9172",
+        "name" : "bacc40d2-4df1-4096-b3cf-f404ed4540bb-attachment.attach",
+        "source" : "a143b0b3502e9172.attach",
+        "type" : "text/plain",
+        "size" : 47
+      }, {
+        "uid" : "fac5a2c2a78bf7cb",
+        "name" : "73b0fa69-b2e4-4f72-804f-8ae1573436b6-attachment.attach",
+        "source" : "fac5a2c2a78bf7cb.attach",
+        "type" : "text/plain",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "_unittest_setUpClass_fixture_TestFlow::0",
+    "time" : {
+      "start" : 1655183773988,
+      "stop" : 1655183773988,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "购买模块"
+  }, {
+    "name" : "story",
+    "value" : "购买子模块：购买流程"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_buy_goods"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFlow"
+  }, {
+    "name" : "host",
+    "value" : "yan"
+  }, {
+    "name" : "thread",
+    "value" : "17636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_buy_goods"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6382a8a76beb8fc6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655183468335,
+        "stop" : 1655183575070,
+        "duration" : 106735
+      }
+    }, {
+      "uid" : "f08b37a002eef0ad",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 0 not greater than or equal to 38",
+      "time" : {
+        "start" : 1655183238836,
+        "stop" : 1655183352710,
+        "duration" : 113874
+      }
+    }, {
+      "uid" : "ef22b9609f17a1be",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a class=\"Sub-orders gwc-qjs\" href=\"javascript:void(0);\" onclick=\"submit_order();\">...</a> is not clickable at point (1289, 692). Other element would receive the click: <div class=\"layui-layer-shade\" id=\"layui-layer-shade1\" times=\"1\" style=\"z-index:19891014; background-color:#000; opacity:0.8; filter:alpha(opacity=80);\"></div>\n  (Session info: chrome=102.0.5005.115)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x009CD953+2414931]\n\tOrdinal0 [0x0095F5E1+1963489]\n\tOrdinal0 [0x0084C6B8+837304]\n\tOrdinal0 [0x0087FC27+1047591]\n\tOrdinal0 [0x0087DC08+1039368]\n\tOrdinal0 [0x0087B90B+1030411]\n\tOrdinal0 [0x0087A659+1025625]\n\tOrdinal0 [0x00870293+983699]\n\tOrdinal0 [0x0089449C+1131676]\n\tOrdinal0 [0x0086FC74+982132]\n\tOrdinal0 [0x008946B4+1132212]\n\tOrdinal0 [0x008A4812+1198098]\n\tOrdinal0 [0x008942B6+1131190]\n\tOrdinal0 [0x0086E860+976992]\n\tOrdinal0 [0x0086F756+980822]\n\tGetHandleVerifier [0x00C3CC62+2510274]\n\tGetHandleVerifier [0x00C2F760+2455744]\n\tGetHandleVerifier [0x00A5EABA+551962]\n\tGetHandleVerifier [0x00A5D916+547446]\n\tOrdinal0 [0x00965F3B+1990459]\n\tOrdinal0 [0x0096A898+2009240]\n\tOrdinal0 [0x0096A985+2009477]\n\tOrdinal0 [0x00973AD1+2046673]\n\tBaseThreadInitThunk [0x7757FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77957A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77957A4E+238]",
+      "time" : {
+        "start" : 1655183098711,
+        "stop" : 1655183183742,
+        "duration" : 85031
+      }
+    }, {
+      "uid" : "6584f60751a5af82",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: '￥2799.00' != '￥2743.02'\n- ￥2799.00\n+ ￥2743.02",
+      "time" : {
+        "start" : 1655182659787,
+        "stop" : 1655182768848,
+        "duration" : 109061
+      }
+    }, {
+      "uid" : "4e87253c97cfc6e5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 0 not greater than or equal to 7",
+      "time" : {
+        "start" : 1655179174326,
+        "stop" : 1655179295612,
+        "duration" : 121286
+      }
+    }, {
+      "uid" : "c479751e582d02ed",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 0 not greater than or equal to 20220614110047",
+      "time" : {
+        "start" : 1655178023161,
+        "stop" : 1655178141039,
+        "duration" : 117878
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "618d84d12012a575.json",
+  "parameterValues" : [ ]
+}

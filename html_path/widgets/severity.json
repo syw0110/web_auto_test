@@ -1,0 +1,11 @@
+[ {
+  "uid" : "618d84d12012a575",
+  "name" : "正常购买流程",
+  "time" : {
+    "start" : 1655183675057,
+    "stop" : 1655183773988,
+    "duration" : 98931
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

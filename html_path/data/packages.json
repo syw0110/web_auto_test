@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "cases.test_buy_goods",
+    "children" : [ {
+      "name" : "正常购买流程",
+      "uid" : "618d84d12012a575",
+      "parentUid" : "29c41f394c35e9a966b4442bbd075396",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655183675057,
+        "stop" : 1655183773988,
+        "duration" : 98931
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cases.test_buy_goods"
+  } ]
+}

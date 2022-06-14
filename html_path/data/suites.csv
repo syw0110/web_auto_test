@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jun 14 13:14:35 CST 2022","Tue Jun 14 13:16:13 CST 2022","98931","cases","test_buy_goods","TestFlow","","","正常购买流程","用户选择商品进行购买，断言购买商品数据正确"

@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "cases",
+    "children" : [ {
+      "name" : "test_buy_goods",
+      "children" : [ {
+        "name" : "TestFlow",
+        "children" : [ {
+          "name" : "正常购买流程",
+          "uid" : "618d84d12012a575",
+          "parentUid" : "9d79c9146ff59b5564f858fca4fc4096",
+          "status" : "passed",
+          "time" : {
+            "start" : 1655183675057,
+            "stop" : 1655183773988,
+            "duration" : 98931
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "9d79c9146ff59b5564f858fca4fc4096"
+      } ],
+      "uid" : "c1e184afddc1747eb0be8b798bfd6158"
+    } ],
+    "uid" : "9614ab5598a04b276864cf0744ce0d93"
+  } ]
+}

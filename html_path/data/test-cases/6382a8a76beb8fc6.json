@@ -1,0 +1,136 @@
+{
+  "uid" : "6382a8a76beb8fc6",
+  "name" : "正常购买流程",
+  "fullName" : "cases.test_buy_goods.TestFlow#test_buy_flow",
+  "historyId" : "83b610b7c6de45e159e36418aa02765d",
+  "time" : {
+    "start" : 1655183468335,
+    "stop" : 1655183575070,
+    "duration" : 106735
+  },
+  "description" : "用户选择商品进行购买，断言购买商品数据正确",
+  "descriptionHtml" : "<p>用户选择商品进行购买，断言购买商品数据正确</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_unittest_setUpClass_fixture_TestFlow",
+    "time" : {
+      "start" : 1655183468333,
+      "stop" : 1655183468333,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "用户选择商品进行购买，断言购买商品数据正确",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "选择商品加入购物车流程",
+      "time" : {
+        "start" : 1655183471249,
+        "stop" : 1655183471253,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2d4ae3b70aad0747",
+        "name" : "8211f893-1590-4f68-b70e-2111b801775b-attachment.attach",
+        "source" : "2d4ae3b70aad0747.attach",
+        "type" : "text/plain",
+        "size" : 67
+      }, {
+        "uid" : "87dc14ad3b45e179",
+        "name" : "3df012f3-46c9-412c-aeaf-f9a5c06765d7-attachment.attach",
+        "source" : "87dc14ad3b45e179.attach",
+        "type" : "text/plain",
+        "size" : 47
+      }, {
+        "uid" : "fadd62d607b8d47f",
+        "name" : "5716402a-d0e8-4b81-a7c8-dbf44c9a3118-attachment.attach",
+        "source" : "fadd62d607b8d47f.attach",
+        "type" : "text/plain",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "_unittest_setUpClass_fixture_TestFlow::0",
+    "time" : {
+      "start" : 1655183575071,
+      "stop" : 1655183575071,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "购买模块"
+  }, {
+    "name" : "story",
+    "value" : "购买子模块：购买流程"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_buy_goods"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFlow"
+  }, {
+    "name" : "host",
+    "value" : "yan"
+  }, {
+    "name" : "thread",
+    "value" : "6136-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_buy_goods"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6382a8a76beb8fc6.json",
+  "parameterValues" : [ ]
+}
